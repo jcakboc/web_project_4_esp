@@ -1,0 +1,17 @@
+.elements{
+    margin-top: 46.25px;
+    display: grid;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px 18px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 320px){
+    .elements{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+}

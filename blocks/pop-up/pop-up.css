@@ -1,0 +1,14 @@
+.pop-up{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    z-index:99;
+    background: hsl(0deg 0% 0%/50%);
+}
+
+.pop-up_open{
+    display: flex;
+}

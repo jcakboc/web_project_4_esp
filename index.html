@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="page/index.css" />
+    <title>Formulario con JS</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img class="logo" src="images/logo.svg" alt="logo around" />
+      </header>
+      <div class="content">
+        <div class="profile">
+          <img class="profile__avatar" src="/images/avatar.png" alt="avatar" />
+          <h1 class="profile__profile-name">NICKNAME</h1>
+          <h3 class="profile__profile-main">MAIN</h3>
+          <img
+            class="profile__edit-button"
+            src="/images/Edit Button.svg"
+            alt="edit button"
+          />
+          <img
+            class="profile__add-button"
+            src="/images/Add Button.svg"
+            alt="add button"
+          />
+        </div>
+        <div class="elements">
+          <div class="element">
+            <img
+              class="element__image"
+              src="/images/card/air element.jpg"
+              alt="air tv anime image"
+            />
+            <img class="element__trash" src="/images/Trash.svg" alt="trash" />
+            <div class="element__text">
+              <h2 class="element__name-element">AIR TV</h2>
+              <img class="element__like-button" src="/images/Vector.svg" alt="like button">
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__image"
+              src="/images/card/angel element.jpg"
+              alt="angel beats anime image"
+            />
+            <img class="element__trash" src="/images/Trash.svg" alt="trash" />
+            <div class="element__text">
+              <h2 class="element__name-element">ANGEL BEATS</h2>
+              <img class="element__like-button" src="/images/Vector.svg" alt="like button">
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__image"
+              src="/images/card/digmon element.jpg"
+              alt="digimon anime image"
+            />
+            <img class="element__trash" src="/images/Trash.svg" alt="trash" />
+            <div class="element__text">
+              <h2 class="element__name-element">DIGIMON</h2>
+              <img class="element__like-button" src="/images/Vector.svg" alt="like button">
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__image"
+              src="/images/card/dn elemente.jpg"
+              alt="death note anime image"
+            />
+            <img class="element__trash" src="/images/Trash.svg" alt="trash" />
+            <div class="element__text">
+              <h2 class="element__name-element">DEATH NOTE</h2>
+              <img class="element__like-button" src="/images/Vector.svg" alt="like button">
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__image"
+              src="/images/card/inuyasha element.jpg"
+              alt="inuyasha anime image"
+            />
+            <img class="element__trash" src="/images/Trash.svg" alt="trash" />
+            <div class="element__text">
+              <h2 class="element__name-element">INUYASHA</h2>
+              <img class="element__like-button" src="/images/Vector.svg" alt="like button">
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__image"
+              src="/images/card/sakura element.jpg"
+              alt="sakura card captor anime image"
+            />
+            <img class="element__trash" src="/images/Trash.svg" alt="trash" />
+            <div class="element__text">
+              <h2 class="element__name-element">SAKURA CARD CAPTOR</h2>
+              <img class="element__like-button" src="/images/Vector.svg" alt="like button">
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <h3 class="footer__final-text">© 2020 Mesto Russia</h3>
+      </footer>
+    </div>
+    <div class="pop-up">
+      <div class="pop-up__form-content">
+        <img class="pop-up__close-icon" src="/images/Close Icon.svg" alt="close button">
+        <form class="form">
+          <h2 class="form__title">Edit Profile</h2>
+          <input type="text" class="form__heading" id="heading" name="heading" placeholder="Name" value="Jacques Cousteau" required>
+          <input type="text" class="form__subheading" id="subheading" name="subheading" placeholder="Descripción breve" value="Explorador" required>
+          <button type="submit" class="form__button">Guardar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/page/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.form__heading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #000000;
+    border-image: initial;
+    border-bottom: 1px solid rgb(188, 188, 196);
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+}
+
+@media screen and (max-width: 320px){
+    .form__heading{
+        margin-top: 76px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

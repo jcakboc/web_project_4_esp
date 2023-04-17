@@ -1,0 +1,10 @@
+.element__trash{
+    position: absolute;
+    display: flex;
+    justify-self:end;
+}
+
+.element__trash:hover{
+    opacity: 0.5;
+}
+
