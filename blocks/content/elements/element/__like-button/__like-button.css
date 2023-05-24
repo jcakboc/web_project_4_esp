@@ -7,7 +7,7 @@
     opacity: 0.5;
 }
 
-.element__like-button:active{
+.element__like-button-active{
     background-image: url(/images/Union.png);
 }
 

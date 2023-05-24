@@ -29,15 +29,15 @@
           />
         </div>
         <div class="elements">
-          <div class="element">
+          <!-- <div class="element">
             <img
               class="element__image"
               src="/images/card/air element.jpg"
-              alt="air tv anime image"
+              alt="Valle de Yosemite"
             />
             <img class="element__trash" src="/images/Trash.png" alt="trash" />
             <div class="element__text">
-              <h2 class="element__name-element">AIR TV</h2>
+              <h2 class="element__name-element">Valle de Yosemite</h2>
               <img class="element__like-button" src="/images/Vector.png" alt="like button">
             </div>
           </div>
@@ -45,11 +45,11 @@
             <img
               class="element__image"
               src="/images/card/angel element.jpg"
-              alt="angel beats anime image"
+              alt="Lago Louise"
             />
             <img class="element__trash" src="/images/Trash.png" alt="trash" />
             <div class="element__text">
-              <h2 class="element__name-element">ANGEL BEATS</h2>
+              <h2 class="element__name-element">Lago Louise</h2>
               <img class="element__like-button" src="/images/Vector.png" alt="like button">
             </div>
           </div>
@@ -57,11 +57,11 @@
             <img
               class="element__image"
               src="/images/card/digmon element.jpg"
-              alt="digimon anime image"
+              alt="Montañas Calvas"
             />
             <img class="element__trash" src="/images/Trash.png" alt="trash" />
             <div class="element__text">
-              <h2 class="element__name-element">DIGIMON</h2>
+              <h2 class="element__name-element">Montañas Calvas</h2>
               <img class="element__like-button" src="/images/Vector.png" alt="like button">
             </div>
           </div>
@@ -69,11 +69,11 @@
             <img
               class="element__image"
               src="/images/card/dn elemente.jpg"
-              alt="death note anime image"
+              alt=">Latemar"
             />
             <img class="element__trash" src="/images/Trash.png" alt="trash" />
             <div class="element__text">
-              <h2 class="element__name-element">DEATH NOTE</h2>
+              <h2 class="element__name-element">Latemar</h2>
               <img class="element__like-button" src="/images/Vector.png" alt="like button">
             </div>
           </div>
@@ -81,11 +81,11 @@
             <img
               class="element__image"
               src="/images/card/inuyasha element.jpg"
-              alt="inuyasha anime image"
+              alt="Parque Nacional de la Vanoise"
             />
             <img class="element__trash" src="/images/Trash.png" alt="trash" />
             <div class="element__text">
-              <h2 class="element__name-element">INUYASHA</h2>
+              <h2 class="element__name-element">Parque Nacional de la Vanoise</h2>
               <img class="element__like-button" src="/images/Vector.png" alt="like button">
             </div>
           </div>
@@ -93,29 +93,90 @@
             <img
               class="element__image"
               src="/images/card/sakura element.jpg"
-              alt="sakura card captor anime image"
+              alt="Lago di Braies"
             />
             <img class="element__trash" src="/images/Trash.png" alt="trash" />
             <div class="element__text">
-              <h2 class="element__name-element">SAKURA CARD CAPTOR</h2>
+              <h2 class="element__name-element">Lago di Braies</h2>
               <img class="element__like-button" src="/images/Vector.png" alt="like button">
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <footer class="footer">
         <h3 class="footer__final-text">© 2020 Mesto Russia</h3>
       </footer>
     </div>
-    <div class="pop-up">
+    <div class="pop-up" id="modal-1">
       <div class="pop-up__form-content">
-        <img class="pop-up__close-icon" src="/images/Close Icon.png" alt="close button">
-        <form class="form">
+        <img
+          class="pop-up__close-icon"
+          id="close1"
+          src="/images/Close Icon.png"
+          alt="close button"
+        />
+        <form class="form" id="editProfileForm">
           <h2 class="form__title">Edit Profile</h2>
-          <input type="text" class="form__heading" id="heading" name="heading" placeholder="Name" value="Jacques Cousteau" required>
-          <input type="text" class="form__subheading" id="subheading" name="subheading" placeholder="Descripción breve" value="Explorador" required>
+          <input
+            type="text"
+            class="form__heading"
+            id="heading"
+            name="heading"
+            placeholder="Name"
+            value="Jacques Cousteau"
+            required
+          />
+          <input
+            type="text"
+            class="form__subheading"
+            id="subheading"
+            name="subheading"
+            placeholder="Descripción breve"
+            value="Explorador"
+            required
+          />
           <button type="submit" class="form__button">Guardar</button>
         </form>
+      </div>
+    </div>
+    <div class="pop-up" id="modal-2">
+      <div class="pop-up__form-content">
+        <img
+          class="pop-up__close-icon"
+          id="close2"
+          src="/images/Close Icon.png"
+          alt="close button"
+        />
+        <form class="form" id="addCardForm">
+          <h2 class="form__title">Agregar nueva tarjeta</h2>
+          <input
+            type="text"
+            class="form__input"
+            id="title"
+            placeholder="Título"
+            required
+          />
+          <input
+            type="url"
+            class="form__input"
+            id="image-link"
+            placeholder="Enlace de la imagen"
+            required
+          />
+          <button type="submit" class="form__button">Agregar</button>
+        </form>
+      </div>
+    </div>
+    <div class="pop-up" id="modal-3">
+      <div class="pop-up__form-content">
+        <img
+          class="pop-up__close-icon"
+          id="close3"
+          src="/images/Close Icon.png"
+          alt="close button"
+        />
+        <img class="" id="imagePopUp" src="" alt="imagen grande" />
+        <h2 class="pop-up__image-title" id="imagePopUpTitle"></h2>
       </div>
     </div>
     <script src="/page/index.js"></script>
