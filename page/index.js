@@ -1,8 +1,8 @@
 /* PRIMER FORMULARIO*/
 
 const editButton = document.querySelector(".profile__edit-button");
-const popup = document.getElementById("modal-1");
-const closeIcon1 = document.getElementById("close1");
+const popup = document.getElementById("modal-profile");
+const closeIcon1 = document.getElementById("CloseProfile");
 const form = document.getElementById("editProfileForm");
 const save = document.querySelector(".form__button");
 
@@ -16,8 +16,8 @@ function handlerProfile(event) {
   const mainProfile = document.getElementById("subheading");
   const profile = document.querySelector(".profile__profile-name");
   const main = document.querySelector(".profile__profile-main");
-  profile.innerHTML = nameProfile.value;
-  main.innerHTML = mainProfile.value;
+  profile.textContent = nameProfile.value;
+  main.textContent = mainProfile.value;
   handlerDisplayPopup();
 }
 
@@ -68,7 +68,7 @@ function deleteCard(elementId) {
   document.getElementById(elementId).remove();
 }
 
-function ClickImage (imgSrc, title) {
+function clickImage(imgSrc, title) {
   console.log(imgSrc, title);
 
 
@@ -83,7 +83,7 @@ function ClickImage (imgSrc, title) {
   handleDisplayModalImage();
 }
 
-function addElement(cardId, cardName, cardLink, likeId) {
+function createCard(cardId, cardName, cardLink, likeId) {
   const divElement = document.createElement("div");
   divElement.classList.add("element");
   divElement.id = cardId;
@@ -92,7 +92,7 @@ function addElement(cardId, cardName, cardLink, likeId) {
   image.src = cardLink;
   image.alt = `Foto del ${cardName}`;
   image.classList.add("element__image");
-  image.addEventListener("click", () => ClickImage(cardLink, cardName));
+  image.addEventListener("click", () => clickImage(cardLink, cardName));
   divElement.appendChild(image);
 
   const deleteElement = document.createElement("img");
@@ -129,8 +129,8 @@ initialCards.forEach((card, index) => {
   const cardId = "card-" + index.toString();
   const likeId = "like-" + index.toString();
 
-  const divElement = addElement(cardId, cardName, cardLink, likeId);
-  cardContainer.appendChild(divElement);
+  const divElement = createCard(cardId, cardName, cardLink, likeId);
+  cardContainer.prepend(divElement);
 });
 
 function handleDisplayModal2() {
@@ -151,7 +151,7 @@ function handleCreateCardFormSubmit (event) {
     const cardId = "card-" + cardContainer.children.length.toString();
     const likeId = "like-card-" + cardContainer.children.length.toString();
     
-    const divElement = addElement(cardId, titleValue, linkValue, likeId);
+    const divElement = createCard(cardId, titleValue, linkValue, likeId);
     cardContainer.appendChild(divElement);
   
     // Limpiando el formulario
