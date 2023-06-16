@@ -1,5 +1,6 @@
+@import url(/vendor/normalize.css);
 @import url(/blocks/root/Inter/inter.css);
-@import url(/blocks/root/root.css);
+@import url(/blocks/root-project/root.css);
 @import url(/blocks/logo/logo.css);
 @import url(/blocks/header/header.css);
 @import url(/blocks/content/content.css);
@@ -19,7 +20,7 @@
 @import url(/blocks/footer/footer.css);
 @import url(/blocks/footer/__final-text/__final-text.css);
 @import url(/blocks/pop-up/pop-up.css);
-@import url(/blocks/pop-up/__close-icon/__close-icon.css);
+@import url(/blocks/pop-up/__close-icon/pop-up__close-icon.css);
 @import url(/blocks/pop-up/__form-content/__form-content.css);
 @import url(/blocks/pop-up/form/form.css);
 @import url(/blocks/pop-up/form/__button/__button.css);

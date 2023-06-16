@@ -2,7 +2,7 @@
 
 const editButton = document.querySelector(".profile__edit-button");
 const popup = document.getElementById("modal-profile");
-const closeIcon1 = document.getElementById("CloseProfile");
+const closeIconProfile = document.getElementById("CloseProfile");
 const form = document.getElementById("editProfileForm");
 const save = document.querySelector(".form__button");
 
@@ -22,12 +22,12 @@ function handlerProfile(event) {
 }
 
 editButton.addEventListener("click", handlerDisplayPopup);
-closeIcon1.addEventListener("click", handlerDisplayPopup);
+closeIconProfile.addEventListener("click", handlerDisplayPopup);
 form.addEventListener("submit", handlerProfile);
 
-const popUpThreeElement = document.getElementById("modal-3");
-const closeIcon3 = document.getElementById("close3");
-closeIcon3.addEventListener("click", handleDisplayModalImage);
+const popUpThreeElement = document.getElementById("modal-image");
+const closeIconImage = document.getElementById("closeImage");
+closeIconImage.addEventListener("click", handleDisplayModalImage);
 
 /*CREACION DE LAS TARJETAS INICIALES*/
 
@@ -69,7 +69,7 @@ function deleteCard(elementId) {
 }
 
 function clickImage(imgSrc, title) {
-  console.log(imgSrc, title);
+  console.log(imgSrc,title);
 
 
   const imagePopUpElement = document.getElementById("imagePopUp");
@@ -133,8 +133,8 @@ initialCards.forEach((card, index) => {
   cardContainer.prepend(divElement);
 });
 
-function handleDisplayModal2() {
-  popUpTwo.classList.toggle("pop-up_open");
+function handleDisplayModalElement() {
+  popUpElement.classList.toggle("pop-up_open");
 }
 
 function handleDisplayModalImage() {
@@ -158,21 +158,21 @@ function handleCreateCardFormSubmit (event) {
     document.getElementById("title").value = "";
     document.getElementById("image-link").value = "";
   
-    handleDisplayModal2();
+    handleDisplayModalElement();
   }
 }
 
 /*SEGUNDO FORMULARIO*/
 const addButton = document.querySelector(".profile__add-button");
-const modal = document.getElementById("modal-2");
-const closeIcon2 = document.getElementById("close2");
+const modalElement = document.getElementById("modal-element");
+const closeIconElement = document.getElementById("closeElement");
 const addCardForm = document.getElementById("addCardForm");
 
-function handleDisplayModal2() {
-  modal.classList.toggle("pop-up_open");
+function handleDisplayModalElement() {
+  modalElement.classList.toggle("pop-up_open");
 };
 
-function handleFormTwoSubmit(event) {
+function handleFormAddSubmit(event) {
   event.preventDefault();
   const cardNameInput = document.getElementById("title");
   const cardLinkInput = document.getElementById("image-link");
@@ -183,15 +183,15 @@ function handleFormTwoSubmit(event) {
   const cardId = "card-" + Date.now().toString();
   const likeId = "like-" + Date.now().toString();
 
-  const divElement = addElement(cardId, cardName, cardLink, likeId);
+  const divElement = createCard(cardId, cardName, cardLink, likeId);
   cardContainer.appendChild(divElement);
 
   cardNameInput.value = "";
   cardLinkInput.value = "";
 
-  handleDisplayModal2();
+  handleDisplayModalElement();
 };
 
-addButton.addEventListener("click", handleDisplayModal2);
-closeIcon2.addEventListener("click", handleDisplayModal2);
-addCardForm.addEventListener("submit", handleFormTwoSubmit);
+addButton.addEventListener("click", handleDisplayModalElement);
+closeIconElement.addEventListener("click", handleDisplayModalElement);
+addCardForm.addEventListener("submit",handleFormAddSubmit);
