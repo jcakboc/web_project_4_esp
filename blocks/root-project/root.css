@@ -1,5 +1,8 @@
+html{
+    background-color: black;
+}
 body{
-    background-color: rgba(42, 44, 47, 1);
+    background-color: black;
     margin: auto;
     display: flex;
     flex-direction: column;
