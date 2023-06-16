@@ -25,7 +25,7 @@ editButton.addEventListener("click", handlerDisplayPopup);
 closeIconProfile.addEventListener("click", handlerDisplayPopup);
 form.addEventListener("submit", handlerProfile);
 
-const popUpThreeElement = document.getElementById("modal-image");
+const popUpElement = document.getElementById("modal-image");
 const closeIconImage = document.getElementById("closeImage");
 closeIconImage.addEventListener("click", handleDisplayModalImage);
 
@@ -68,7 +68,7 @@ function deleteCard(elementId) {
   document.getElementById(elementId).remove();
 }
 
-function clickImage(imgSrc, title) {
+function clickImage(imgSrc,title) {
   console.log(imgSrc,title);
 
 
@@ -138,7 +138,7 @@ function handleDisplayModalElement() {
 }
 
 function handleDisplayModalImage() {
-  popUpThreeElement.classList.toggle("pop-up_open");
+  popUpElement.classList.toggle("pop-up_open");
 }
 
 function handleCreateCardFormSubmit (event) {

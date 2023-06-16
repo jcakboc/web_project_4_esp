@@ -1,7 +1,8 @@
 .pop-up__close-icon{
+    display: flex;
     width: 40px;
     height: 40px;
-    align-self: last baseline;
+   margin-left: auto;
 }
 
 .pop-up__close-icon:hover{
