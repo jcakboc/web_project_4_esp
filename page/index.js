@@ -69,17 +69,12 @@ function deleteCard(elementId) {
 }
 
 function clickImage(imgSrc,title) {
-  console.log(imgSrc,title);
-
-
   const imagePopUpElement = document.getElementById("imagePopUp");
   const imagePopUpTitleElement = document.getElementById("imagePopUpTitle");
-  
-  // Actualizando los valores del pop up, imagen y titulo
+    // Actualizando los valores del pop up, imagen y titulo
   imagePopUpElement.src = imgSrc;
   imagePopUpTitleElement.textContent = title;
-  
-  // Displaying modal
+    // Displaying modal
   handleDisplayModalImage();
 }
 
